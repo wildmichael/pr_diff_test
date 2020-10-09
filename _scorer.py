@@ -250,6 +250,7 @@ class _ProbaScorer(_BaseScorer):
                                                  sample_weight=sample_weight,
                                                  **self._kwargs)
         else:
+            # another random change
             return self._sign * self._score_func(y, y_pred, **self._kwargs)
 
     def _factory_args(self):
