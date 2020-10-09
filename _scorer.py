@@ -196,6 +196,7 @@ class _PredictScorer(_BaseScorer):
         """
 
         y_pred = method_caller(estimator, "predict", X)
+        # some random change
         if sample_weight is not None:
             return self._sign * self._score_func(y_true, y_pred,
                                                  sample_weight=sample_weight,
